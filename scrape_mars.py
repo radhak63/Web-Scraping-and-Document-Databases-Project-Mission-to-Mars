@@ -97,9 +97,9 @@ def scrape():
     soup = bs(cerberus_image, "html.parser")
     cerberus_url = soup.find("img", class_="wide-image")["src"]
     cerberus_img_url = hemisphere_base_url + cerberus_url
-    #print(cerberus_img_url)
+    print(cerberus_img_url)
     cerberus_title = soup.find("h2",class_="title").text
-    #print(cerberus_title)
+    print(cerberus_title)
     back_button = browser.find_by_xpath("//*[@id='splashy']/div[1]/div[1]/div[3]/section/a")
     cerberus = {"image title":cerberus_title, "image url": cerberus_img_url}
     hemisphere_img_urls.append(cerberus)
@@ -114,9 +114,9 @@ def scrape():
     soup = bs(schiaparelli_image, "html.parser")
     schiaparelli_url = soup.find("img", class_="wide-image")["src"]
     schiaparelli_img_url = hemisphere_base_url + schiaparelli_url
-    #print(schiaparelli_img_url)
+    print(schiaparelli_img_url)
     schiaparelli_title = soup.find("h2",class_="title").text
-    #print(schiaparelli_title)
+    print(schiaparelli_title)
     back_button = browser.find_by_xpath("//*[@id='splashy']/div[1]/div[1]/div[3]/section/a")
     schiaparelli = {"image title":schiaparelli_title, "image url": schiaparelli_img_url}
     hemisphere_img_urls.append(schiaparelli)
@@ -131,9 +131,9 @@ def scrape():
     soup = bs(syrtis_major_image, "html.parser")
     syrtis_major_url = soup.find("img", class_="wide-image")["src"]
     syrtis_major_img_url = hemisphere_base_url + syrtis_major_url
-    #print(syrtis_major_img_url)
+    print(syrtis_major_img_url)
     syrtis_major_title = soup.find("h2",class_="title").text
-    #print(syrtis_major_title)
+    print(syrtis_major_title)
     back_button = browser.find_by_xpath("//*[@id='splashy']/div[1]/div[1]/div[3]/section/a")
     syrtis_major = {"image title":syrtis_major_title, "image url": syrtis_major_img_url}
     hemisphere_img_urls.append(syrtis_major)
@@ -148,9 +148,9 @@ def scrape():
     soup = bs(valles_marineris_image, "html.parser")
     valles_marineris_url = soup.find("img", class_="wide-image")["src"]
     valles_marineris_img_url = hemisphere_base_url + syrtis_major_url
-    #print(valles_marineris_img_url)
+    print(valles_marineris_img_url)
     valles_marineris_title = soup.find("h2",class_="title").text
-    #print(valles_marineris_title)
+    print(valles_marineris_title)
     back_button = browser.find_by_xpath("//*[@id='splashy']/div[1]/div[1]/div[3]/section/a")
     valles_marineris = {"image title":valles_marineris_title, "image url": valles_marineris_img_url}
     hemisphere_img_urls.append(valles_marineris)
